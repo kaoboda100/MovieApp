@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-quiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="picture/2503508.png">
+    <title>MOVIES</title>
+
+</head>
+
+<body >
+    <script src="https://kit.fontawesome.com/7a565bface.js" crossorigin="anonymous"></script>
+    <header>
+        <ul class = "ani-menu translateX100"></ul>
+        <nav>
+            
+            <div class ="logo_ul">
+                <ul class = 'mainMenu'>
+                    <li class = "menu">
+                        <a href ='#' class="genres ">Genres</a>
+                    </li>
+                    <li class = "menu"><a href="">Home</span></a></li>
+                    <li onclick="fetchDataByGenre(28,'Action')" class = "menu"><a href="#">Action</a></i>
+                    <li onclick="fetchDataByGenre(27,'Horror')" class = "menu"><a href="#">Horror</a></li>
+                    <li onclick="fetchDataByGenre(35,'Comedy')" class = "menu"><a href="#">Comedy</a></li>
+                </ul>
+                
+            </div>
+            <div class="search_User">
+                <input type="text" placeholder="Search Movie.........." id="search_field">
+                <img src="picture/Bảo.png" alt="">
+                <div class = "search">
+                   
+                
+                </div>
+            </div>
+        </nav>
+        
+        <div id="homeUI">
+                   <!-- <video src="https://www.youtube.com/watch?v=AO1XmKnNU-o&t=4811s" autoplay muted loop></video> -->
+            <iframe 
+            class="video"
+            src="https://www.youtube.com/embed/CBwnl3YAbAU?autoplay=1&mute=1&loop=1&playlist=CBwnl3YAbAU"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; ecrypted-media; gyroscope; picture-in-picture; web-share" loop>
+            </iframe>
+        
+            <div class="content">
+                <h1 id ="tittle">Berserk</h1>
+                <p>Berserk is an animation of Japanese manga series written and illustrated by Kentaro Miura. Set in a medieval Europe-inspired dark fantasy world, the story centers on the characters of Guts, a lone swordsman, and Griffith</p>
+                <div class="details">
+                    <h6>Warner Bros</h6>
+                    <h5 id="gen">Thriller</h5>
+                    <h4>2010</h4>
+                    <h3 id="rate"><span>IMDb</span><i class="fa-solid fa-star"></i><li>8.1</li></h3>
+                </div>
+                <div class="btns">
+                    <a href="#" id="playBtn">Watch <i class="fa-solid fa-play"></i></a>
+                    <a href="#" id="downLoadBtn">Download <i class="fa-solid fa-circle-down"></i></a>
+                </div>
+            </div>
+            <section>
+                <h4>Popular</h4>
+                    <div class = cardSlider>
+                        
+                        <div class="cards smoothScroll"></div>
+                        <i id ="right"class="fa-solid fa-arrow-right"></i>
+                        <i id ="left" class="fa-solid fa-arrow-left"></i>        
+                    </div>
+                    
+                
+            </section>  
+        </div>
+        
+        <div id ="genresUI">
+            <h1 class="genresTitle">Popular</h1>
+            <div class="cardLibary">
+                <!-- <a class = detailCard href="">
+                    <img src="" alt="">
+                    <div><ul>day la 1 cai theeeeeeeeeeeeee</ul></div>
+                </a> -->
+            </div>
+            <ul class="pagenavigation">
+                <li class="pageItem"> <a idpage ="1"class="page-a"href="#">1</a></li>
+                <li class="pageItem"> <a idpage ="2"class="page-a"href="#">2</a></li>
+                <li class="pageItem"> <a idpage ="3"class="page-a"href="#">3</a></li>
+                <li class="pageItem"> <a idpage ="4"class="page-a"href="#">4</a></li>
+            </ul>
+        </div>
+        
+        
+    </header>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+header {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px -1px #000;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    /* background: url(picture/berseck.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .9;
+    z-index: -1;
+}
+
+
+header .video {
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    top:-60px;
+    z-index: -1;
+    scale: 120%;
+}
+
+header nav {
+    width:100%;
+    height:10%;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0px 1%;
+    
+}
+header nav .logo_ul {
+    display: flex;
+    width: 100%;
+     margin-left: 10%;
+}
+
+
+
+header nav .logo_ul .mainMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+   
+    
+    
+    
+}
+header nav .logo_ul ul li {
+    padding: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    ;
+    
+}
+header nav .logo_ul ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+header nav .logo_ul ul li a:hover {
+    color: #400000;
+}
+/* header nav .logo_ul ul li a:hover{
+    color: rgba(255, 255, 255, .7);
+} */
+/* ///////////////////////////////////// SEARCHING //////////////////////////////////////////////////////// */
+header nav .search_User {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+}
+header nav .search_User input {
+ font-size: 20px;
+ background: rgba(255, 255, 255, .3);
+ opacity: 100%;
+ border: none;
+ border-radius: 20px;
+ margin-right: 10%;
+ outline: none;
+ text-indent: 20px;
+ color: aliceblue;
+ height: 35px;
+
+}
+
+header nav .search_User input::placeholder {
+  color: aliceblue;
+  opacity: 30%;
+}
+
+header nav .search_User img {
+    width: 30px;
+
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px -1px #000;
+}
+
+header nav .search_User .search {
+    position: absolute;
+   
+    width: 320px;
+    height: 190px;
+    top: 50px;
+    z-index:999;
+    overflow-y: scroll;
+    display:none;
+
+}
+header nav .search_User .search::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+header nav .search_User .search::-webkit-scrollbar-thumb {
+     width: 5px;
+     background: rgba(255, 255, 255, 0.5);
+     border-radius: 5px;
+ }
+ header nav .search_User .search:hover:-webkit-scrollbar {
+    visibility: visible;
+ }
+ header nav .search_User .search:hover:-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+
+header nav .search_User .search .content_Card{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 3px 0px;
+    text-decoration: none;
+}
+
+header nav .search_User .search .content_Card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+header nav .search_User .search .content_Card img{
+ height: 90%;
+ border: none;
+ border-radius: 0%;
+ margin-left: 5px;
+}
+
+header nav .search_User .search .content_Card div{
+   color: #bbb;
+   padding-left: 5px;
+}
+
+header nav .search_User .search .content_Card div p span{
+
+    font-size: 12px;
+    background-color: gold;
+    color: #000;
+    padding: 0px 2px;
+    border-radius: 10%;
+    font-weight: bold;
+    
+    
+}
+
+header nav .search_User .search .content_Card h3{
+   font-size:15px;
+   line-height:25px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 250px;
+ }
+
+ header nav .search_User .search .content_Card div p i{
+    color: gold;
+    margin-left: 5px;
+}
+
+header .content {
+    color: aliceblue;
+    padding-left: 50px;
+    margin-top: 40px;
+}
+
+header .content p {
+    width: 500px;
+    white-space: normal;
+    height: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+header .content h1 {
+    font-size: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 50px;
+
+}
+
+header .content .details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+header .content .details h6{
+   margin-right: 10px;
+   font-size: 15px;
+}
+header .content .details h5{
+    margin-right: 10px;
+    color: rebeccapurple;
+    font-size: 15px;
+}
+header .content .details h4{
+    margin-right: 10px;
+    font-size: 15px;
+}
+header .content .details h3 span{
+    margin-right: 10px;
+    color: #000;
+    background-color: yellow;
+    padding: 0px 2px;
+    border-radius: 5%;
+}
+header .content .details i{
+    font-size: 18px;
+    color: yellow;
+}
+header .content .details li{
+    font-size: 18px;
+    display: inline;
+}
+header .content .btns {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+header .content .btns #playBtn {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    background:linear-gradient(90deg,#00bdff,#009E60);
+}
+header .content .btns #downLoadBtn {
+    background:linear-gradient(90deg,#00FF00,#009E60);
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    margin-left:20px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+header .content .btns #downLoadBtn:hover {
+    opacity: 70%;
+}
+header .content .btns #playBtn:hover {
+    opacity: 70%;
+}
+header  .content .btns i {
+    margin-left: 3px;
+}
+
+header section{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px 50px;
+    color: #fff;
+    margin-top: 90px;
+    font-size: 20px;
+    
+    
+}
+
+header section h4 {
+    border-left: #009E60 10px solid;
+    padding-left: 10px;
+
+}
+
+ /*////////////////////////////CARD//////////////////////////////////////////////////  */
+header section .cardSlider {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    margin-top: 15px;
+}
+
+header section .cards{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    
+ 
+}
+
+header section .cards::-webkit-scrollbar{
+    display: none;
+}
+
+header section .cards .card{
+    min-width: 150px;
+    height: 230px;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: .3s;
+    
+    
+}
+
+header section .cards .card img{
+    width:100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit:cover;
+ }
+header section .cards .card:hover{
+    min-width: 173px;
+    height: 260px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    
+    
+}
+
+header section .cards .card img:hover {
+    width: auto;
+    height: 100%;
+    border-radius: 8px;
+    opacity: 80%;
+    
+}
+header section .cardSlider i{
+    color: aliceblue;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(18,18, 18, .5);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    
+}
+
+header section .cardSlider #right{
+    right:5px;
+}
+
+header section .cardSlider i:hover{
+    background: rgba(18,18, 18,0.9)
+}
+
+.smoothScroll {
+    scroll-behavior:smooth;
+}   
+ /*////////////////////////////CARD//////////////////////////////////////////////////  */
+
+.menu {
+    position: relative;
+    display: block;
+    
+}
+
+
+
+header .ani-menu {
+    position: absolute;
+    z-index: 10;
+    background-color: #121212;
+    width: 13%;
+    height: 100%;
+    color: aliceblue;
+    text-decoration: none;
+    padding-top: 30px;
+    overflow:scroll;
+    transition: 1s;
+    border: #000 1px;
+    box-shadow: #000 0px 20px 30px -10px;
+}
+.translateX100 {
+    transform:translateX(-100%) ;
+}
+
+header .ani-menu::-webkit-scrollbar {
+    display:none;
+
+ }
+
+.ani-menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.ani-menu li {
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-left: 10px #009E60 solid;
+    margin-left: 10px;
+    width: 100%;
+    padding:10px 0px ;
+    transition: 0.5s;
+}
+.ani-menu li:hover {
+    background: #000;
+    cursor: pointer;
+    
+}
+.ani-menu li:hover a{
+    color: #400000;
+}
+.ani-menu li::marker{
+    content:none;
+}
+
+
+/* .ani-menu {
+    height:100vh;
+    display:block;
+    width: 250px;
+    opacity:0;
+    visibility: hidden;
+    position: absolute;
+    left:0;
+    padding-bottom: 100px;
+    transform:translateY(-11%) translateX(-105%);
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    z-index:99;
+    transition: 1s;
+    border-radius: 5px;
+    margin-top: 30px;
+    overflow-x: auto;
+}
+.menu:focus .ani-menu,
+.menu:focus-within .ani-menu{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(-11%) translateX(-5.5%);
+    background-color: #121212;
+    
+    
+}
+.ani-menu li {
+    display: block;    
+    color:aliceblue;
+    margin-top: 20px;
+    height: 70px;
+   
+
+}
+
+.ani-menu li a {
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+*/
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.detailBody {
+    height: 2200px;
+}
+
+.headerGenresUI {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    height: 100%;
+    
+
+    
+    
+}
+
+#genresUI h1 {
+    color: #fff;
+    border-left: #009E60 10px solid;
+    margin-left: 5%;
+    margin-top: 20px;
+    padding-left: 20px;
+    
+    
+    
+    
+}
+
+header .cardLibary {
+    
+    width: 90%;
+    height: 78%;
+    margin: 0 5%;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    scale: 100%;
+
+    
+}
+header .cardLibary a {
+    display: inline-block;
+    height: 370px;
+    min-width: 250px;
+    z-index: 2;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    background: #fff;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    
+}
+
+
+
+header .cardLibary img {
+    height: 100%;
+    object-fit: cover;
+    background: #000;
+    width: 100%;
+    position: absolute;
+    border: #000 1px ;
+    border-radius: 5px;
+}
+header .cardLibary a  div{
+    position: absolute;
+    background: rgba(18,18, 18,0.7);
+    color: aliceblue;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    line-height:80px;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 1s;
+    display: none;
+    
+
+     
+}
+header .cardLibary a:hover  div{
+    display: flex;
+    
+
+
+}
+
+header .cardLibary a:hover img{
+    opacity: 80%;
+    
+
+}
+
+header .cardLibary a div ul {
+    margin: 0px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+#genresUI {
+    display: none;
+}
+
+#genresUI .pagenavigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+#genresUI .pagenavigation .pageItem{
+    margin:0px 10px;
+}
+#genresUI .pagenavigation .page-a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+#genresUI .pagenavigation li::marker{
+    content:none;
+}
